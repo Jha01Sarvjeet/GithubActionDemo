@@ -31,7 +31,7 @@ jobs:
             - name: Set up python
               uses: actions/setup_python@v2
               with: 
-                python-version: '3.8'
+                    python-version: '3.8'
                   
                  
               
@@ -40,7 +40,7 @@ jobs:
             # install depenedency
 
             - name: Install dependencies
-              run:
+              run: |
                 pyhton -m pip install --upgrade pip
                 pip install -r requirements.txt
                 
