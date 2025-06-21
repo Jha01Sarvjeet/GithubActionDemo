@@ -29,9 +29,12 @@ jobs:
             #step 2 :Set up python enviroment
 
             - name: Set up python
-              uses: actions/setup_python@v2
+              uses: actions/setup-python@v2
               with: 
-                    python-version: '3.8'
+                python-version: '3.8'
+                
+                  
+                
                   
                  
               
@@ -41,7 +44,7 @@ jobs:
 
             - name: Install dependencies
               run: |
-                pyhton -m pip install --upgrade pip
+                python -m pip install --upgrade pip
                 pip install -r requirements.txt
                 
             #run tests
